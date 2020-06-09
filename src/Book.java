@@ -8,7 +8,7 @@ public class Book {
     String isbn;
 
     Book (String bookTitle, String bookAuthor, int bookReleaseDate,
-          int bookPages, String bookPublisher, String bookIsbn,) {
+          int bookPages, String bookPublisher, String bookIsbn) {
         title = bookTitle;
         author = bookAuthor;
         releaseDate = bookReleaseDate;
