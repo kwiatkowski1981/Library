@@ -16,4 +16,9 @@ public class Book {
         publisher = bookPublisher;
         isbn = bookIsbn;
     }
+
+        void printInfo() {
+        String info = title + "; " + author + "; " + releaseDate + "; " + pages + "; " + publisher + "; " + isbn;
+            System.out.println(info);
+        }
 }
