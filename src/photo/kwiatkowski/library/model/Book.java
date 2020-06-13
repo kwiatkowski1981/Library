@@ -1,11 +1,13 @@
+package photo.kwiatkowski.library.model;
+
 public class Book {
 
-  private  String title;
-  private  String author;
-  private  int releaseDate;
-  private  int pages;
-  private  String publisher;
-  private  String isbn;
+    private  String title;
+    private  String author;
+    private  int releaseDate;
+    private  int pages;
+    private  String publisher;
+    private  String isbn;
 
     public Book(String title, String author, int releaseDate, int pages, String publisher, String isbn) {
         this(title, author, releaseDate, pages, publisher);
@@ -22,10 +24,10 @@ public class Book {
 
 
 
-    void printInfo() {
+    public void printInfo() {
         String info = title + "; " + author + "; " + releaseDate + "; " + pages + "; " + publisher + "; " + isbn;
-            System.out.println(info);
-        }
+        System.out.println(info);
+    }
 
     public String getTitle() {
         return title;
