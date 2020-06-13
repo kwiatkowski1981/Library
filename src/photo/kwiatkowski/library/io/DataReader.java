@@ -18,6 +18,7 @@ public class DataReader {
         int pages = sc.nextLine();
         sc.nextLine();
 
+
         new Book(title, author, releaseDate, pages, publisher, isbn);
     }
 }
