@@ -1,32 +1,26 @@
 package photo.kwiatkowski.library.app;
 
+import photo.kwiatkowski.library.io.DataReader;
 import photo.kwiatkowski.library.model.Book;
 
 public class Library {
 
     public static void main(String[] args) {
 
-        String appName = "photo.kwiatkowski.library.app.Library.Library v0.7";
+        String appName = "photo.kwiatkowski.library.app.Library.Library v0.8";
 
 
         Book[] books = new Book[1000];
 
-        books[0] = new Book("W pustyni i w puszczy", "Henryk Sienkiewicz", 2010,
-                296, "Greg", "9788373271890");
+        DataReader dataReader = new DataReader();
+        books[0] = dataReader.readAndCreateBook();
+        books[1] = dataReader.readAndCreateBook();
 
-        books[1] = new Book("Java. Efektywne programowanie. Wydanie II.", "Joshua Bloch",
-                2009, 352, "Helion", "9788324620845");
 
-        books[2] = new Book("SCJP Sun Certified Programmer for Java 6 Study Guide",
-                "Bert Bates, Katherine Sierra", 2008, 851,
-                "McGraw-Hill Osborne Media");
 
         System.out.println(appName);
         System.out.println("Książki dostępne w bibliotece:");
         books[0].printInfo();
         books[1].printInfo();
-        books[2].printInfo();
-
-
     }
 }

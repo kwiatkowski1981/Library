@@ -1,9 +1,11 @@
 package photo.kwiatkowski.library.io;
+import photo.kwiatkowski.library.model.Book;
 import java.util.Scanner;
 
 public class DataReader {
-    private Scanner sc  = new Scanner(System.in);
-    Book readAndCreateBook(){
+    //    private Scanner sc  = new Scanner(System.in);
+    public  Book readAndCreateBook(){
+        Scanner sc  = new Scanner(System.in);
         System.out.println("Tytuł");
         String title = sc.nextLine();
         System.out.println("Autor");
@@ -13,12 +15,12 @@ public class DataReader {
         System.out.println("ISBN");
         String isbn = sc.nextLine();
         System.out.println("Rok wydania:");
-        int releaseDate = sc.nextLine();
+        int releaseDate = sc.nextInt();
         System.out.println("Liczba Stron:");
-        int pages = sc.nextLine();
+        int pages = sc.nextInt();
         sc.nextLine();
 
 
-        new Book(title, author, releaseDate, pages, publisher, isbn);
+       return new Book(title, author, releaseDate, pages, publisher, isbn);
     }
 }
