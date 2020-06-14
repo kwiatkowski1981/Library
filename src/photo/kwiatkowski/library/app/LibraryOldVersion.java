@@ -3,7 +3,7 @@ package photo.kwiatkowski.library.app;
 import photo.kwiatkowski.library.io.DataReader;
 import photo.kwiatkowski.library.model.Book;
 
-public class Library {
+public class LibraryOldVersion {
 
     public static void main(String[] args) {
 
