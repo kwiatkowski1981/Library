@@ -51,9 +51,9 @@ import photo.kwiatkowski.library.model.Library;
 
             private void printOptons() {
                 System.out.println("Choose Option:");
-                System.out.println("exit - exit the program");
-                System.out.println("addBook - add new book");
-                System.out.println("printBooks - view available books");
+                System.out.println("0 - exit the program");
+                System.out.println("1 - add new book");
+                System.out.println("2 - view available books");
 
             }
 
