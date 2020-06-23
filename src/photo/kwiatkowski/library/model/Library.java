@@ -2,12 +2,12 @@ package photo.kwiatkowski.library.model;
 
 public class Library {
 
-    private final int maxBooks = 1000;
-    private Book[] books = new Book[maxBooks];
+    private static final int MaxBooks = 1000;
+    private Book[] books = new Book[MaxBooks];
     private int booksNumber = 0;
 
     public void addBook(Book book) {
-        if (booksNumber < maxBooks) {
+        if (booksNumber < MaxBooks) {
             books[booksNumber] = book;
             booksNumber++;
         }else{

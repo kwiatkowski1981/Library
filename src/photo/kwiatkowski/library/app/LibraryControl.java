@@ -6,9 +6,9 @@ import photo.kwiatkowski.library.model.Library;
 
         public class LibraryControl {
 
-              private final int  exit =  0 ;
-              private final int  addBook =  1 ;
-              private final int  printBooks =  2 ;
+              private static final int Exit =  0 ;
+              private static final int AddBook =  1 ;
+              private static final int PrintBooks =  2 ;
 
               private DataReader dataReader = new DataReader();
               private Library library = new Library();
@@ -20,19 +20,19 @@ import photo.kwiatkowski.library.model.Library;
                          printOptons();
                          option = dataReader.getInt();
                          switch ( option ) {
-                             case addBook:
+                             case AddBook:
                                         addBook();
                                     break;
-                             case printBooks:
+                             case PrintBooks:
                                         printBooks();
                                     break;
-                             case exit:
+                             case Exit:
                                         exit();
                                     break;
                              default:
                                  System.out.println("there is no such option, select again");
                          }
-                     } while (option != exit);
+                     } while (option != Exit);
               }
 
             private void exit() {
@@ -58,3 +58,5 @@ import photo.kwiatkowski.library.model.Library;
             }
 
         }
+
+
