@@ -1,5 +1,7 @@
 package photo.kwiatkowski.library.io;
 import photo.kwiatkowski.library.model.Book;
+import photo.kwiatkowski.library.model.Magazine;
+
 import java.util.Scanner;
 
 public  class DataReader {
@@ -22,12 +24,31 @@ public  class DataReader {
                      int releaseDate = sc.nextInt();
                      System.out.println("Liczba Stron:");
                      int pages = sc.nextInt();
-                     sc.nextLine();
 
-            return new Book(title, author, releaseDate, pages, publisher, isbn);
+                     return new Book(title, author, releaseDate, pages, publisher, isbn);
          }
 
-         public void close() {
+         public Magazine readAndCreateMagazine(){
+
+                     System.out.println("Proszę wpisać kolejno:");
+
+                     System.out.println("Tytuł:");
+                     String title = sc.nextLine();
+                     System.out.println("Wydawnictwo:");
+                     String publisher = sc.nextLine();
+                     System.out.println("Jezyk:");
+                     String language = sc.nextLine();
+                     System.out.println("Rok wydania:");
+                     int year = sc.nextInt();
+                     System.out.println("Miesiąc:");
+                     int month = sc.nextInt();
+                     System.out.println("Dzień:");
+                     int day = sc.nextInt();
+                     sc.nextLine();
+
+                     return new Magazine(title, publisher, language, year, month, day);
+                     }
+                     public void close() {
                  sc.close();
          }
 
