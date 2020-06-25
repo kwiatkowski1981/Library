@@ -3,9 +3,9 @@ package photo.kwiatkowski.library.model;
 public class Library {
 
     private static final int MAX_BOOKS = 1000;
-    private static final int MAX_MAGAZINE = 1000;
+    private static final int MAX_MAGAZINES = 1000;
     private Book[] books = new Book[MAX_BOOKS];
-    private Magazine[] magazines = new Magazine[MAX_MAGAZINE];
+    private Magazine[] magazines = new Magazine[MAX_MAGAZINES];
     private int booksNumber = 0;
     private int magazinesNumber = 0;
 
@@ -29,7 +29,7 @@ public class Library {
     }
 
     public void addMagazine(Magazine magazine) {
-        if (magazinesNumber < MAX_MAGAZINE) {
+        if (magazinesNumber < MAX_MAGAZINES) {
             magazines[magazinesNumber] = magazine;
             magazinesNumber++;
         }else{
