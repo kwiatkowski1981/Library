@@ -1,6 +1,6 @@
 package photo.kwiatkowski.library.model;
 
-public class Book {
+public class Book extends Publication {
 
     private  String title;
     private  String author;
