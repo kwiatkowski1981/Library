@@ -40,9 +40,9 @@ public class Magazine extends Publication {
     public void setLanguage(String language) {
         this.language = language;
     }
-    
 
-    @Override
+
+        @Override
     public String toString() {
         return super.toString() + "; " + month + "; " + day + "; " + language;
     }
